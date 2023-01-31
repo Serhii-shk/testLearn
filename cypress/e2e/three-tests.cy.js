@@ -4,16 +4,16 @@ describe('Three tests', () => {
 
   it('Playwright test', () => {
 
-    cy.visit('https://playwright.dev/')
+    cy.visit('https://playwright.dev/');
     cy.contains('Get started').click();
     cy.wait(2000);
 
   })
 
-  it('Book of the JS test', () => {
+  it('Vega.ua test', () => {
 
-    cy.visit('https://learn.javascript.ru/css-selectors')
-    cy.get('a[href="https://javascript.ru/forum/"]').click();
+    cy.visit('https://vega.ua/ukr/for_home');
+    cy.get('[class="shadowed"]').last().click();
     cy.wait(2000);
 
 
@@ -21,9 +21,8 @@ describe('Three tests', () => {
 
   it('Google test', () => {
 
-    cy.visit('https://playwright.dev/')
-    cy.get('[title="Поиск"]').type('Де знаходиться Україна?')
-    cy.contains('Поиск в Google').click();
+    cy.visit('https://www.google.com.ua')
+    cy.get('.gLFyf').type('Де знаходиться Україна?{enter}');
     cy.wait(2000);
 
   })
