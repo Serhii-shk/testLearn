@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://gitlab.com/Olex-316/testgitlab/issues"
   },
-  "homepage": "https://gitlab.com/Olex-316/testgitlab#readme"
+  "homepage": "https://gitlab.com/Olex-316/testgitlab#readme",
+  "devDependencies": {
+    "cypress": "^12.4.1"
+  }
 }
